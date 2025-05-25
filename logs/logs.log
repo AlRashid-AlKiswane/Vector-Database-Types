@@ -1,0 +1,177 @@
+2025-05-25 05:18:23 [INFO] 🚀 Starting Pinecone operations pipeline
+2025-05-25 05:18:23 [INFO] [Pinecone] 🔐 Initializing Pinecone client
+2025-05-25 05:18:25 [INFO] [Pinecone] ✅ Index already exists: developer-quickstart-py
+2025-05-25 05:18:26 [INFO] [Pinecone] 📝 Upserting sample records to namespace 'ns1'
+2025-05-25 05:18:27 [INFO] [Pinecone] ✅ Records successfully upserted.
+2025-05-25 05:18:27 [INFO] [historical structures and monuments] 🔎 Performing basic search for query: '%s'
+2025-05-25 05:18:27 [INFO] 📄 Basic Search Results:
+2025-05-25 05:18:27 [INFO] 🎯 Performing reranked search using BGE model
+2025-05-25 05:18:27 [INFO] 📄 Reranked Search Results:
+2025-05-25 05:19:34 [INFO] 🚀 Starting Pinecone operations pipeline
+2025-05-25 05:19:34 [INFO] [Pinecone] 🔐 Initializing Pinecone client
+2025-05-25 05:19:34 [INFO] [Pinecone] ✅ Index already exists: developer-quickstart-py
+2025-05-25 05:19:35 [INFO] [Pinecone] 📝 Upserting sample records to namespace 'ns1'
+2025-05-25 05:19:36 [INFO] [Pinecone] ✅ Records successfully upserted.
+2025-05-25 05:19:36 [INFO] [historical structures and monuments] 🔎 Performing basic search for query: '%s'
+2025-05-25 05:19:36 [INFO] 📄 Basic Search Results:
+2025-05-25 05:19:36 [INFO] {'result': {'hits': [{'_id': 'rec7',
+                      '_score': 0.07303179055452347,
+                      'fields': {'category': 'history',
+                                 'chunk_text': 'The Great Wall of China was '
+                                               'built to protect against '
+                                               'invasions.'}},
+                     {'_id': 'rec5',
+                      '_score': 0.06732825934886932,
+                      'fields': {'category': 'literature',
+                                 'chunk_text': 'Shakespeare wrote many famous '
+                                               'plays, including Hamlet and '
+                                               'Macbeth.'}},
+                     {'_id': 'rec1',
+                      '_score': 0.051276978105306625,
+                      'fields': {'category': 'history',
+                                 'chunk_text': 'The Eiffel Tower was completed '
+                                               'in 1889 and stands in Paris, '
+                                               'France.'}},
+                     {'_id': 'rec10',
+                      '_score': 0.051101598888635635,
+                      'fields': {'category': 'physics',
+                                 'chunk_text': "Newton's laws describe the "
+                                               'motion of objects.'}},
+                     {'_id': 'rec3',
+                      '_score': 0.0341256745159626,
+                      'fields': {'category': 'science',
+                                 'chunk_text': 'Albert Einstein developed the '
+                                               'theory of relativity.'}}]},
+ 'usage': {'embed_total_tokens': 7, 'read_units': 6}}
+2025-05-25 05:19:36 [INFO] 🎯 Performing reranked search using BGE model
+2025-05-25 05:19:37 [INFO] 📄 Reranked Search Results:
+2025-05-25 05:19:37 [INFO] {'result': {'hits': [{'_id': 'rec1',
+                      '_score': 0.11221036314964294,
+                      'fields': {'category': 'history',
+                                 'chunk_text': 'The Eiffel Tower was completed '
+                                               'in 1889 and stands in Paris, '
+                                               'France.'}},
+                     {'_id': 'rec7',
+                      '_score': 0.09252365678548813,
+                      'fields': {'category': 'history',
+                                 'chunk_text': 'The Great Wall of China was '
+                                               'built to protect against '
+                                               'invasions.'}},
+                     {'_id': 'rec5',
+                      '_score': 1.6314539607265033e-05,
+                      'fields': {'category': 'literature',
+                                 'chunk_text': 'Shakespeare wrote many famous '
+                                               'plays, including Hamlet and '
+                                               'Macbeth.'}},
+                     {'_id': 'rec10',
+                      '_score': 1.6187581422855146e-05,
+                      'fields': {'category': 'physics',
+                                 'chunk_text': "Newton's laws describe the "
+                                               'motion of objects.'}},
+                     {'_id': 'rec3',
+                      '_score': 1.6061610949691385e-05,
+                      'fields': {'category': 'science',
+                                 'chunk_text': 'Albert Einstein developed the '
+                                               'theory of relativity.'}}]},
+ 'usage': {'embed_total_tokens': 7, 'read_units': 6, 'rerank_units': 1}}
+2025-05-25 05:46:56 [INFO] [config] Milvus client initialized with DB path 'milvus_demo.db'
+2025-05-25 05:47:00 [INFO] [config] Embedding model 'all-MiniLM-L6-v2' loaded
+2025-05-25 05:47:00 [INFO] [index_utils] Created collection 'demo_collection' with dimension 384
+2025-05-25 05:47:01 [INFO] [index_utils] Prepared 10 data entries for insertion
+2025-05-25 05:47:01 [INFO] Data ready with 10 entities.
+2025-05-25 05:47:01 [INFO] [index_utils] Inserted 10 entities into collection 'demo_collection'
+2025-05-25 05:47:01 [INFO] [search_utils] Running search on collection 'demo_collection' with limit=1 and filter='None'
+2025-05-25 05:47:01 [INFO] [search_utils] Search returned 1 results
+2025-05-25 05:47:01 [INFO] Search results for query 'Who is Alan Turing?': data: [[{'id': 2, 'distance': 0.29646462202072144, 'entity': {'text': 'Albert Einstein developed the theory of relativity.', 'id': 2}}]]
+2025-05-25 05:47:01 [INFO] Prepared 3 new documents with subject 'biology'.
+2025-05-25 05:47:01 [INFO] [index_utils] Inserted 3 entities into collection 'demo_collection'
+2025-05-25 05:47:01 [INFO] [search_utils] Running search on collection 'demo_collection' with limit=2 and filter='subject == 'biology''
+2025-05-25 05:47:01 [INFO] [search_utils] Search returned 1 results
+2025-05-25 05:47:01 [INFO] Filtered search results: data: [[{'id': 11, 'distance': 0.3008096516132355, 'entity': {'text': 'Computational synthesis with AI algorithms predicts molecular properties.', 'id': 11}}, {'id': 10, 'distance': 0.2232796996831894, 'entity': {'text': 'Machine learning has been used for drug design.', 'id': 10}}]]
+2025-05-25 16:49:49 [INFO] 🚀 Starting Pinecone operations pipeline
+2025-05-25 16:49:49 [INFO] [Pinecone] 🔐 Initializing Pinecone client
+2025-05-25 16:49:49 [INFO] [Pinecone] ✅ Index already exists: developer-quickstart-py
+2025-05-25 16:49:50 [INFO] [Pinecone] 📝 Upserting sample records to namespace 'ns1'
+2025-05-25 16:49:51 [INFO] [Pinecone] ✅ Records successfully upserted.
+2025-05-25 16:49:51 [INFO] [historical structures and monuments] 🔎 Performing basic search for query: '%s'
+2025-05-25 16:49:52 [INFO] 📄 Basic Search Results:
+2025-05-25 16:49:52 [INFO] {'result': {'hits': [{'_id': 'rec7',
+                      '_score': 0.07278304547071457,
+                      'fields': {'category': 'history',
+                                 'chunk_text': 'The Great Wall of China was '
+                                               'built to protect against '
+                                               'invasions.'}},
+                     {'_id': 'rec5',
+                      '_score': 0.0673137903213501,
+                      'fields': {'category': 'literature',
+                                 'chunk_text': 'Shakespeare wrote many famous '
+                                               'plays, including Hamlet and '
+                                               'Macbeth.'}},
+                     {'_id': 'rec1',
+                      '_score': 0.05132215470075607,
+                      'fields': {'category': 'history',
+                                 'chunk_text': 'The Eiffel Tower was completed '
+                                               'in 1889 and stands in Paris, '
+                                               'France.'}},
+                     {'_id': 'rec10',
+                      '_score': 0.05099712684750557,
+                      'fields': {'category': 'physics',
+                                 'chunk_text': "Newton's laws describe the "
+                                               'motion of objects.'}},
+                     {'_id': 'rec3',
+                      '_score': 0.03394879028201103,
+                      'fields': {'category': 'science',
+                                 'chunk_text': 'Albert Einstein developed the '
+                                               'theory of relativity.'}}]},
+ 'usage': {'embed_total_tokens': 7, 'read_units': 6}}
+2025-05-25 16:49:52 [INFO] 🎯 Performing reranked search using BGE model
+2025-05-25 16:49:52 [INFO] 📄 Reranked Search Results:
+2025-05-25 16:49:52 [INFO] {'result': {'hits': [{'_id': 'rec1',
+                      '_score': 0.11221036314964294,
+                      'fields': {'category': 'history',
+                                 'chunk_text': 'The Eiffel Tower was completed '
+                                               'in 1889 and stands in Paris, '
+                                               'France.'}},
+                     {'_id': 'rec7',
+                      '_score': 0.09252365678548813,
+                      'fields': {'category': 'history',
+                                 'chunk_text': 'The Great Wall of China was '
+                                               'built to protect against '
+                                               'invasions.'}},
+                     {'_id': 'rec5',
+                      '_score': 1.6314539607265033e-05,
+                      'fields': {'category': 'literature',
+                                 'chunk_text': 'Shakespeare wrote many famous '
+                                               'plays, including Hamlet and '
+                                               'Macbeth.'}},
+                     {'_id': 'rec10',
+                      '_score': 1.6187581422855146e-05,
+                      'fields': {'category': 'physics',
+                                 'chunk_text': "Newton's laws describe the "
+                                               'motion of objects.'}},
+                     {'_id': 'rec3',
+                      '_score': 1.6061610949691385e-05,
+                      'fields': {'category': 'science',
+                                 'chunk_text': 'Albert Einstein developed the '
+                                               'theory of relativity.'}}]},
+ 'usage': {'embed_total_tokens': 7, 'read_units': 6, 'rerank_units': 1}}
+2025-05-25 16:50:20 [INFO] [config] Milvus client initialized with DB path 'milvus_demo.db'
+2025-05-25 16:50:23 [INFO] [config] Embedding model 'all-MiniLM-L6-v2' loaded
+2025-05-25 16:50:23 [INFO] [index_utils] Dropped existing collection 'demo_collection'
+2025-05-25 16:50:23 [INFO] [index_utils] Created collection 'demo_collection' with dimension 384
+2025-05-25 16:50:23 [INFO] [index_utils] Prepared 10 data entries for insertion
+2025-05-25 16:50:23 [INFO] Data ready with 10 entities.
+2025-05-25 16:50:23 [INFO] [index_utils] Inserted 10 entities into collection 'demo_collection'
+2025-05-25 16:50:23 [INFO] [search_utils] Running search on collection 'demo_collection' with limit=1 and filter='None'
+2025-05-25 16:50:23 [INFO] [search_utils] Search returned 1 results
+2025-05-25 16:50:23 [INFO] Search results for query 'Who is Alan Turing?': data: [[{'id': 2, 'distance': 0.29646462202072144, 'entity': {'text': 'Albert Einstein developed the theory of relativity.', 'id': 2}}]]
+2025-05-25 16:50:23 [INFO] Prepared 3 new documents with subject 'biology'.
+2025-05-25 16:50:23 [INFO] [index_utils] Inserted 3 entities into collection 'demo_collection'
+2025-05-25 16:50:23 [INFO] [search_utils] Running search on collection 'demo_collection' with limit=2 and filter='subject == 'biology''
+2025-05-25 16:50:23 [INFO] [search_utils] Search returned 1 results
+2025-05-25 16:50:23 [INFO] Filtered search results: data: [[{'id': 11, 'distance': 0.3008096516132355, 'entity': {'text': 'Computational synthesis with AI algorithms predicts molecular properties.', 'id': 11}}, {'id': 10, 'distance': 0.2232796996831894, 'entity': {'text': 'Machine learning has been used for drug design.', 'id': 10}}]]
+2025-05-25 16:55:27 [INFO] ✅ Qdrant client initialized
+2025-05-25 16:55:31 [INFO] 📐 Embedding model loaded
+2025-05-25 16:55:31 [INFO] 📦 Qdrant collection 'demo_collection' created
+2025-05-25 16:55:31 [INFO] ✅ Data inserted into Qdrant collection
+2025-05-25 16:55:31 [INFO] 🔍 Search completed with 2 results
