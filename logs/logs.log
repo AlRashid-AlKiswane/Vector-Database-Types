@@ -175,3 +175,9 @@
 2025-05-25 16:55:31 [INFO] 📦 Qdrant collection 'demo_collection' created
 2025-05-25 16:55:31 [INFO] ✅ Data inserted into Qdrant collection
 2025-05-25 16:55:31 [INFO] 🔍 Search completed with 2 results
+2025-05-25 17:39:32 [ERROR] ❌ Unexpected error while initializing Weaviate client: Client.__init__() takes 1 positional argument but 2 were given
+2025-05-25 17:40:31 [ERROR] ❌ Unexpected error while initializing Weaviate client: Client.__init__() got an unexpected keyword argument 'url'
+2025-05-25 17:43:59 [ERROR] ❌ Failed to initialize Weaviate client: Connection to Weaviate failed. Details: Error: [Errno 111] Connection refused. 
+Is Weaviate running and reachable at http://localhost:8080?
+2025-05-25 17:44:52 [ERROR] ❌ Failed to initialize Weaviate client: Connection to Weaviate failed. Details: Error: [Errno 111] Connection refused. 
+Is Weaviate running and reachable at http://localhost:8080?
